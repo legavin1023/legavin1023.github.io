@@ -1,71 +1,67 @@
+/***********************************************
 
-//로컬
-var init = function () {
-  var hour =document.getElementById('hour');
-  var min =document.getElementById('min');
-  var sec =document.getElementById('sec');
+* JavaScript Alarm Clock- by JavaScript Kit (www.javascriptkit.com)
+* This notice must stay intact for usage
+* Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
 
-  var hourNumber = 0;
-  var minNumber = 0;
-  var secNumber = 0;
+***********************************************/
 
-  //버튼 추가
-  var startBT = document.getElementById('startButton');
-  var stopBT= document.getElementById('stopButton');
-  var resetBT = document.getElementById('resetButton');
+var jsalarm={
+	padfield:function(f){
+		return (f<10)? "0"+f : f
+	},
+	showcurrenttime:function(){
+		var dateobj=new Date()
+		var ct=this.padfield(dateobj.getHours())+":"+this.padfield(dateobj.getMinutes())+":"+this.padfield(dateobj.getSeconds())
+		this.ctref.innerHTML=ct
+		this.ctref.setAttribute("title", ct)
+		if (typeof this.hourwake!="undefined"){ //if alarm is set
+			if (this.ctref.title==(this.hourwake+":"+this.minutewake+":"+this.secondwake)){
+				clearInterval(jsalarm.timer)
+				window.location=document.getElementById("musicloc").value
+			}
+		}
+	},
+	init:function(){
+		var dateobj=new Date()
+		this.ctref=document.getElementById("jsalarm_ct")
+		this.submitref=document.getElementById("submitbutton")
+		this.submitref.onclick=function(){
+			jsalarm.setalarm()
+			this.value="알람 시작"
+			this.disabled=true
+			return false
+		}
+		this.resetref=document.getElementById("resetbutton")
+		this.resetref.onclick=function(){
+		jsalarm.submitref.disabled=false
+		jsalarm.hourwake=undefined
+		jsalarm.hourselect.disabled=false
+		jsalarm.minuteselect.disabled=false
+		jsalarm.secondselect.disabled=false
+		return false
+		}
+		var selections=document.getElementsByTagName("select")
+		this.hourselect=selections[0]
+		this.minuteselect=selections[1]
+		this.secondselect=selections[2]
+		for (var i=0; i<60; i++){
+			if (i<24) //If still within range of hours field: 0-23
+			this.hourselect[i]=new Option(this.padfield(i), this.padfield(i), false, dateobj.getHours()==i)
+			this.minuteselect[i]=new Option(this.padfield(i), this.padfield(i), false, dateobj.getMinutes()==i)
+			this.secondselect[i]=new Option(this.padfield(i), this.padfield(i), false, dateobj.getSeconds()==i)
 
-  function hourHandler() {
-    hourNumber = hourNumber + 1;
-    hour.innerHTML = addZero(hourNumber);
-  }
-  function minHandler() {
-    minNumber = minNumber + 1;
-    if (minNumber === 60 ) {
-      hourHandler();
-      minNumber = 0;
-    }
-    min.innerHTML = addZero(minNumber);
-  }
-  function secHandler() {
-    secNumber = secNumber + 1;
-    if (secNumber === 60 ) {
-      minHandler();
-      secNumber = 0;
-    }
-    sec.innerHTML = addZero(secNumber);
-  }
-
-// 숫자두개 00
-function addZero(num) {
-  if (num < 10) {
-    return '0'+ num;
-  }
-  return num;
+		}
+		jsalarm.showcurrenttime()
+		jsalarm.timer=setInterval(function(){jsalarm.showcurrenttime()}, 1000)
+	},
+	setalarm:function(){
+		this.hourwake=this.hourselect.options[this.hourselect.selectedIndex].value
+		this.minutewake=this.minuteselect.options[this.minuteselect.selectedIndex].value
+		this.secondwake=this.secondselect.options[this.secondselect.selectedIndex].value
+		this.hourselect.disabled=true
+		this.minuteselect.disabled=true
+		this.secondselect.disabled=true
+	}
 }
-//초
-  function intervalHandler() {
-    secHandler();
-}
-var time = 0;
-
-startBT.addEventListener('click', function startBT(){
-  time = setInterval(intervalHandler, 1000);
-})
-stopBT.addEventListener('click', function stopBT(){
-  clearInterval(time);
-})
-
-resetBT.addEventListener('click', function resetBT(){
-  clearInterval(time);
-  var hourNumber = 0;
-  var minNumber = 0;
-  var secNumber = 0;
-  //왜 아래를 넣어야 되는지 모르겠따
-  hour.innerHTML = addZero(hourNumber);
-  min.innerHTML = addZero(minNumber);
-  sec.innerHTML = addZero(secNumber);
-})
-//실행
-
-};
-document.addEventListener('DOMContentLoaded',init);
+jsalarm.init()
