@@ -79,8 +79,8 @@ div{width: 1220px; margin: 0 auto; text-align: center;}
 }
 
 
-#center > div a:first-child:hover{text-indent: -99999px;	background-image: url('../images/1.png');}
-#center > div a:nth-of-type(2):hover{text-indent: -99999px;	background-image: url('../images/2.png');}
+#center > div a:first-child:hover{text-indent: -99999px;	background-image: url('../images/2.png');}
+#center > div a:nth-of-type(2):hover{text-indent: -99999px;	background-image: url('../images/1.png');}
 #center > div a:nth-of-type(3):hover{ background-color: #000;}
 #center > div a:nth-of-type(4):hover{text-indent: -99999px;background-image: url('../images/3.png');}
 #center > div a:nth-of-type(5):hover{text-indent: -99999px;background-image: url('../images/4.png');}
