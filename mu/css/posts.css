@@ -70,17 +70,7 @@ body{
 border-bottom: 1px solid #bbb; line-height: 40px;}
 #center dd{ font-size:15px;line-height: 160%; margin: 20px 0;}
 #center dd:last-of-type{text-align: right;font-style: italic;}
-
+.wr{text-align: right;color: #ccc;font-size: 12px;}
 hr{border: 1px solid #eee;}
 
 .ca{padding-left: 15px;}
-
-
-
-
-footer{clear: both;width: 100%;position: fixed; bottom: 0px;}
-footer ul{font-size: 12px;color: #bbb;}
-footer ul li{margin: 10px 0;float:left;}
-footer ul li:first-of-type{width: 32%; text-align:left;margin-left: 2%;}
-footer ul li:nth-last-of-type(2){width: 32%; text-align: center;}
-footer ul li:last-of-type{width: 32%;text-align: right;margin-right: 2%;}

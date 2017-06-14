@@ -65,36 +65,29 @@ body{
 	/*background-color: #fff;*/
 }
 
-div{width: 1050px; margin: 0 auto; text-align: center;}
+
+
+div{width: 1220px; margin: 0 auto; text-align: center;}
 #center > div a {
 	background-size: cover;
 	width: 150px;height: 150px; float: left;margin: 135px 10px;
 	 border-radius: 100%;color: #fff;display:
 }
-#center > div a:nth-of-type(2){
+#center > div a:nth-of-type(3){
 	width: 350px;height: 350px;margin-top: 25px ;
 	/*background-image: url(../images/2.png);*/
 }
 
 
 #center > div a:first-child:hover{text-indent: -99999px;	background-image: url('../images/1.png');}
-#center > div a:nth-of-type(2):hover{ background-color: #000;}
-#center > div a:nth-of-type(3):hover{text-indent: -99999px;background-image: url('../images/3.png');}
-#center > div a:nth-of-type(4):hover{text-indent: -99999px;background-image: url('../images/4.png');}
+#center > div a:nth-of-type(2):hover{text-indent: -99999px;	background-image: url('../images/2.png');}
+#center > div a:nth-of-type(3):hover{ background-color: #000;}
+#center > div a:nth-of-type(4):hover{text-indent: -99999px;background-image: url('../images/3.png');}
+#center > div a:nth-of-type(5):hover{text-indent: -99999px;background-image: url('../images/4.png');}
 #center > div a:last-of-type:hover{text-indent: -99999px;background-image: url('../images/5.png');}
 
-#center > div a dl{width: 160px; margin: 0 auto;text-align: center;}
-#center > div a:nth-of-type(2) dl{width: 230px;}
+#center > div a dl{width: 160px; margin: 0 auto;text-align: center;line-height: 15px;}
+#center > div a:nth-of-type(3) dl{width: 230px;}
 #center > div a dl dt{margin: 40px 0  20px;font-size: 25px;font-weight: bold;}
 #center > div a dl dd{margin-bottom: 10px;color: #ccc;}
 #center > div a dl dd span{color:#888; font-size: 15px;}
-
-
-
-
-footer{clear: both;width: 100%;position: fixed; bottom: 0px;}
-footer ul{font-size: 12px;color: #bbb;}
-footer ul li{margin: 10px 0;float:left;}
-footer ul li:first-of-type{width: 32%; text-align:left;margin-left: 2%;}
-footer ul li:nth-last-of-type(2){width: 32%; text-align: center;}
-footer ul li:last-of-type{width: 32%;text-align: right;margin-right: 2%;}

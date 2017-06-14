@@ -76,15 +76,8 @@ span {width: 33%;float: left;border-bottom: 1px solid #eee; margin-top: 8px;}
 .C3 {background-image: url('../images/D_3.png');}
 .C4 {background-image: url('../images/D_4.png');}
 .C5 {background-image: url('../images/D_5.png');}
+.C5_5 {background-image: url('../images/D_5_5.png');}
 .C6 {background-image: url('../images/D_6.png');}
+.C6_5 {background-image: url('../images/D_6_5.png');}
 .C7 {background-image: url('../images/D_7.png');}
 .C8 {background-image: url('../images/D_8.png');}
-
-
-
-footer{clear: both;width: 100%;position: fixed; bottom: 0px;}
-footer ul{font-size: 12px;color: #bbb;}
-footer ul li{margin: 10px 0;float:left;}
-footer ul li:first-of-type{width: 32%; text-align:left;margin-left: 2%;}
-footer ul li:nth-last-of-type(2){width: 32%; text-align: center;}
-footer ul li:last-of-type{width: 32%;text-align: right;margin-right: 2%;}

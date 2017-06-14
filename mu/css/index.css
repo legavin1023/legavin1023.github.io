@@ -66,12 +66,3 @@ body{
 
 
 header img{width: 500px;height: auto;margin: 0 auto; }
-
-
-
-footer{clear: both;width: 100%;position: fixed; bottom: 0px;}
-footer ul{font-size: 12px;color: #bbb;}
-footer ul li{margin: 10px 0;float:left;}
-footer ul li:first-of-type{width: 32%; text-align:left;margin-left: 2%;}
-footer ul li:nth-last-of-type(2){width: 32%; text-align: center;}
-footer ul li:last-of-type{width: 32%;text-align: right;margin-right: 2%;}
