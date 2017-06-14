@@ -55,7 +55,7 @@ a{
 }
 /*-----------------------------------------------------------------------------*/
 html{
-		background-image: url('../images/bg_2.jpg');
+		background-image: url('bg_2.jpg');
 		background-size: cover; overflow: hidden;
 }
 
