@@ -55,7 +55,7 @@ a{
 }
 /*-----------------------------------------------------------------------------*/
 body{
-		background-image: url(../images/bg_2.jpg);
+		background-image: url('../images/bg_2.jpg');
 		background-size: cover; overflow: hidden;
 }
 
@@ -67,14 +67,14 @@ body{
 #center> div{width: 80%;height: 100%;margin: 0 auto;margin-top: 70px;margin-bottom: 70px;
 background-size: contain;background-position: center;background-repeat: no-repeat;}
 
-.C1 {background-image: url(../images/D_1.png);}
-.C2 {background-image: url(../images/D_2.png);}
-.C3 {background-image: url(../images/D_3.png);}
-.C4 {background-image: url(../images/D_4.png);}
-.C5 {background-image: url(../images/D_5.png);}
-.C6 {background-image: url(../images/D_6.png);}
-.C7 {background-image: url(../images/D_7.png);}
-.C8 {background-image: url(../images/D_8.png);}
+.C1 {background-image: url('../images/D_1.png');}
+.C2 {background-image: url('../images/D_2.png');}
+.C3 {background-image: url('../images/D_3.png');}
+.C4 {background-image: url('../images/D_4.png');}
+.C5 {background-image: url('../images/D_5.png');}
+.C6 {background-image: url('../images/D_6.png');}
+.C7 {background-image: url('../images/D_7.png');}
+.C8 {background-image: url('../images/D_8.png');}
 
 
 

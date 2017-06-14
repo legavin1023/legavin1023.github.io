@@ -55,7 +55,7 @@ a{
 }
 /*-----------------------------------------------------------------------------*/
 body{
-		background-image: url(../images/bg_1.jpg);
+		background-image: url('../images/bg_1.jpg');
 		background-size: cover; overflow: hidden;
 }
 
@@ -75,9 +75,9 @@ div{width: 800px; margin: 0 auto;}
 	width: 350px;height: 350px;margin:25px 50px;
 	/*background-image: url(../images/2.png);*/
 }
-#center > div a:first-child:hover{text-indent: -99999px;	background-image: url(../images/1.png);}
+#center > div a:first-child:hover{text-indent: -99999px;	background-image: url('../images/1.png');}
 #center > div a:nth-of-type(2):hover{ background-color: #000;}
-#center > div a:last-of-type:hover{text-indent: -99999px;background-image: url(../images/3.png);}
+#center > div a:last-of-type:hover{text-indent: -99999px;background-image: url('../images/3.png');}
 
 
 
