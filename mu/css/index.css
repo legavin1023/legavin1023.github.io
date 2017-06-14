@@ -54,7 +54,7 @@ a{
 	padding: 0;
 }
 /*-----------------------------------------------------------------------------*/
-body{
+html{
 		background-image: url('../images/bg_1.jpg');
 		background-size: cover; overflow: hidden;
 }
