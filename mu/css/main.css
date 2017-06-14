@@ -54,9 +54,9 @@ a{
 	padding: 0;
 }
 /*-----------------------------------------------------------------------------*/
-html{
-		background-image: url('bg_1.jpg');
-		background-size: cover; overflow: hidden;
+body{
+  background: url('bg_2.jpg') no-repeat;
+  background-size: cover; overflow: hidden;
 }
 
 #center {
