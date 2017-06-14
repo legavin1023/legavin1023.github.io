@@ -1,0 +1,42 @@
+body{
+  font-family:'Noto Sans Korean'; width: 100%;height: 100%;
+  background: url('./bg_2.jpg') no-repeat;
+  background-size: cover; overflow: hidden;
+}
+
+#home{position: fixed;top: 10px; left: 2%;z-index: 999; color:  #319394;font-size: 50px;}
+#home:hover{color: #c51a5b;}
+#center{z-index: -999;}
+
+a {cursor: pointer;}
+
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans Regular'), local('NotoSans-Regular'),
+    url(../font/NotoSansKR-Regular-Hestia.otf),
+    url(../font/NotoSansKR-Regular-Hestia.eot),
+    url(../font/NotoSansKR-Regular-Hestia.woff)
+
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight:bold;
+    src: local('Noto Sans Regular'), local('NotoSans-Regular'),
+    url(../font/NotoSansKR-Bold-Hestia.otf)
+    url(../font/NotoSansKR-Bold-Hestia.eot),
+    url(../font/NotoSansKR-Bold-Hestia.woff)
+
+}
+
+::-webkit-scrollbar {width: 10px; height: 10px; border: 3px solid #fff; }
+
+::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {display: block; height: 10px; background: url(`./images/bg.png`) #fff;}
+
+::-webkit-scrollbar-track {background:  #fff; -webkit-border-radius: 10px; border-radius:10px; -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0)}
+
+::-webkit-scrollbar-thumb {height: 50px; width: 50px; background: #319394; -webkit-border-radius: 10px; border-radius: 8px; -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0)}
